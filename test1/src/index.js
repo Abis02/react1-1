@@ -8,14 +8,15 @@ import Library from './chapter_03/Library';
 import Clock from './chapter_03/Clock';
 import Welcome from './chapter_05/Welcome';
 import CommentList from './chapter_05/CommentList';
+import NotificationList from './chapter_06/NotificationList';
 
-const element = <Welcome name="인제" />
+//const element = <Welcome name="인제" />
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
   root.render(
     <React.StrictMode>
-      <CommentList />
+      <NotificationList />
     </React.StrictMode>
 );
 

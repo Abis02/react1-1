@@ -269,3 +269,44 @@
             </div>
         );
     }
+
+
+※ state
+    State란?
+        리액트 컴포넌트의 상태를 의미
+        상태의 의미는 정상인지 비정상인지가 아니라 컴포넌트의 데이터를 의미
+        정확히는 컴포넌트의 변경가능한 데이터를 의미
+        State가 변하면 다시 렌더링 되기 때문에 렌더링과 관련된 값만 state에 포함
+
+    state의 특징
+        리액트만의 특별한 형태가 아닌 자바 스크립트 객체
+
+        예의 LikeButton은 class 컴포넌트
+        constructor는 생성자이고 그 안에 있는
+        this.state가 현 컴포넌트의 state
+
+        함수형에서는 useState() 사용
+
+        state는 변경은 가능하다고 했지만 직접 수정해서는 안 됨
+        불가능 하다고 생각하는 것이 좋다
+        state를 변경하고자 할 때는 setstate()함수를 사용
+
+        //잘못된 예
+        this.state = {
+            name: 'Inje'
+        };
+
+        //옳은 예
+        this.setState({
+            name: 'Inje'
+        });
+
+
+※ 생명주기
+    생명주기는 컴포넌트의 생성 시점, 사용 시점, 종료 시점을 나타내느 것
+    constructor가 실행 되면서 컴포넌트가 생성
+    생성 직후 componentDidMount() 함수 호출
+    컴포넌트가 소멸하기 전까지 여러 번 렌더링
+    렌더링은 props, setState(), forceUpdate()에 의해 상태가 변경되며 이루어짐
+    그리고 렌더링이 끝나면 componentDidUpdate() 함수가 호출
+    컴포넌트가 언마운드 되면 componentWillunMoUNT()함수가 호출
