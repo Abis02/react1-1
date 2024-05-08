@@ -11,6 +11,8 @@ import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
 //import Counter from './Counter';
 import FocusButton from './FocusButton';
+import MyButton from './MyButton';
+import LoginControl from './LoginControl';
 
 //const element = <Welcome name="인제" />
 
@@ -18,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
   root.render(
     <React.StrictMode>
-      <FocusButton />
+      <LoginControl />
     </React.StrictMode>
 );
 
