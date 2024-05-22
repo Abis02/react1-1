@@ -11,14 +11,15 @@ import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
 //import Counter from './Counter';
 import FocusButton from './FocusButton';
-
+import useCounter from './chapter_07/Accommodate.jsx/Accomodate';
 //const element = <Welcome name="인제" />
+import LandingPage from './LandingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
   root.render(
     <React.StrictMode>
-      <FocusButton />
+      <LandingPage/>
     </React.StrictMode>
 );
 
