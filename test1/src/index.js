@@ -12,15 +12,16 @@ import NotificationList from './chapter_06/NotificationList';
 import FocusButton from './FocusButton';
 import useCounter from './chapter_07/Accommodate.jsx/Accomodate';
 import MyButton from './MyButton';
-import LoginControl from './LoginControl';
+//import LoginControl from './LoginControl';
 //const element = <Welcome name="인제" />
 import LandingPage from './LandingPage';
+import SignUp from './SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
   root.render(
     <React.StrictMode>
-      <LoginControl />
+      <SignUp />
     </React.StrictMode>
 );
 
