@@ -10,7 +10,4 @@ export default function DarkOrLight() {
         }
     }, [theme])
 
-    return (
-        <ThemeContext.Provider
-    )
 }
